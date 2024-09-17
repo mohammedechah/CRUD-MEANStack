@@ -1,0 +1,73 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #653bff; /* A yellow highlight on hover */
+}
+
+button {
+  color: white;
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: #ffeb3b; /* Same hover effect for consistency */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: #1e88e5; /* A slightly deeper blue for a modern feel */
+  padding: 0 20px;
+  height: 64px; /* Standard height for material toolbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+mat-toolbar a {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 15px; /* Spacing between items */
+}
+
+ul li {
+  margin-left: 15px; /* Spacing between navigation items */
+}
+
+mat-toolbar span a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  ul {
+    display: block; /* Stack items on smaller screens */
+    text-align: right;
+  }
+
+  ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  mat-toolbar span a {
+    font-size: 18px;
+  }
+}
